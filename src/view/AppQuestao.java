@@ -6,24 +6,22 @@ import model.Questao;
 public class AppQuestao {
 
     public static void main(String[] args) {
-       Questao qt1 = new Questao(1, "O método utilizado para inicializar objetos"
+        
+        Questao qt1 = new Questao(1, "O método utilizado para inicializar objetos"
                + " de uma classe quando estes são criados é denominado "
-               + "construtor", true, null, 0, 0);
-        
-        System.out.println(qt1.getNumero() + "\n" + qt1.getPergunta());
-        
+               + "construtor", true, "", 0, 0);
+            
         JOptionPane jp = new JOptionPane();
         
-        
-        boolean compResposta = Boolean.parseBoolean(jp.showInputDialog(qt1.getPergunta()));
-        
-        
-        if (compResposta == qt1.getResposta()) {
-            
-            jp.showMessageDialog(jp,qt1.getResposta()+qt1.getComentario());
-            System.out.println("Resposta certa!");
+        //Inicializada com zero, porque jp.showConfirm.. retorna valor inteiro
+        int compResposta;// = 0; 
+        compResposta = jp.showConfirmDialog(jp,"Questão " +qt1.getNumero()+ " - " +qt1.getPergunta()+ "\n",
+                "Caderno de questões", JOptionPane.YES_NO_OPTION);
+                
+        if (compResposta == 0) {
+            jp.showMessageDialog(jp,"Resposta certa!" + qt1.getComentario());
         } else {
-            jp.showMessageDialog(jp,"Resposta errada!");
+            jp.showMessageDialog(jp,"Resposta errada!\n" + qt1.getComentario());
         }
         
         
@@ -50,5 +48,6 @@ public class AppQuestao {
         Questao qt5 = new Questao(5, "Um construtor, responsável pela alocação"
                 + " de recursos necessários, é um método chamado para criação "
                 + "de uma nova instância do objeto.", true, null, 0, 0);
+    
     }
 }
