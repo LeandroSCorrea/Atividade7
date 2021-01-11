@@ -27,8 +27,17 @@ public class AppQuestao {
         
         Questao qt2 = new Questao(2, "No enfoque de orientação a objetos,"
                 + " um procedimento de chamada dentro de um objeto é um método"
-                , false, "falsa! É uma operação.", 0, 0);
+                , false, "É uma operação.", 0, 0);
         
+        compResposta = jp.showConfirmDialog(jp,"Questão " +qt2.getNumero()+ " - " +qt2.getPergunta()+ "\n",
+                "Caderno de questões", JOptionPane.YES_NO_OPTION);
+                
+        if (compResposta == 1) {
+            jp.showMessageDialog(jp,"Resposta certa!\n" + qt2.getComentario());
+        } else {
+            jp.showMessageDialog(jp,"Resposta errada!" + qt2.getComentario());
+        }
+    /*
         Questao qt3 = new Questao(3, "Na orientação a objetos, o desenvolvimento"
                 + " de sistemas baseia-se, de forma completa, nos conceitos de"
                 + " classe, objeto e atributos.", false, "Questão falsa! Objeto,"
@@ -48,6 +57,6 @@ public class AppQuestao {
         Questao qt5 = new Questao(5, "Um construtor, responsável pela alocação"
                 + " de recursos necessários, é um método chamado para criação "
                 + "de uma nova instância do objeto.", true, null, 0, 0);
-    
+    */
     }
 }
