@@ -37,12 +37,21 @@ public class AppQuestao {
         } else {
             jp.showMessageDialog(jp,"Resposta errada!" + qt2.getComentario());
         }
-    /*
+    
         Questao qt3 = new Questao(3, "Na orientação a objetos, o desenvolvimento"
                 + " de sistemas baseia-se, de forma completa, nos conceitos de"
                 + " classe, objeto e atributos.", false, "Questão falsa! Objeto,"
                 + " estado e estímulo.", 0, 0);
-    
+        
+        compResposta = jp.showConfirmDialog(jp,"Questão " +qt3.getNumero()+ " - " +qt3.getPergunta()+ "\n",
+                "Caderno de questões", JOptionPane.YES_NO_OPTION);
+                
+        if (compResposta == 1) {
+            jp.showMessageDialog(jp,"Resposta certa!\n" + qt3.getComentario());
+        } else {
+            jp.showMessageDialog(jp,"Resposta errada!" + qt3.getComentario());
+        }
+        
         Questao qt4 = new Questao(4, "Na orientação a objetos, em uma relação de"
                 + " herança entre classes, a subclasse herda da superclasse"
                 + " todas as variáveis de instância e os métodos, entretanto,"
@@ -54,9 +63,25 @@ public class AppQuestao {
                 + "a objeto que tem por objetivo especializar um comportamento "
                 + "comum que fora definido na superclasse.", 0, 0);
         
+        compResposta = jp.showConfirmDialog(jp,"Questão " +qt4.getNumero()+ " - " +qt4.getPergunta()+ "\n",
+                "Caderno de questões", JOptionPane.YES_NO_OPTION);
+                
+        if (compResposta == 0) {
+            jp.showMessageDialog(jp,"Resposta certa!" + qt4.getComentario());
+        } else {
+            jp.showMessageDialog(jp,"Resposta errada!\n" + qt4.getComentario());
+        }
+        
         Questao qt5 = new Questao(5, "Um construtor, responsável pela alocação"
                 + " de recursos necessários, é um método chamado para criação "
                 + "de uma nova instância do objeto.", true, null, 0, 0);
-    */
+        compResposta = jp.showConfirmDialog(jp,"Questão " +qt5.getNumero()+ " - " +qt5.getPergunta()+ "\n",
+                "Caderno de questões", JOptionPane.YES_NO_OPTION);
+                
+        if (compResposta == 0) {
+            jp.showMessageDialog(jp,"Resposta certa!" + qt5.getComentario());
+        } else {
+            jp.showMessageDialog(jp,"Resposta errada!\n" + qt5.getComentario());
+        }
     }
 }
