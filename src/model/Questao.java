@@ -5,16 +5,12 @@ public class Questao {
     public String pergunta;
     public boolean resposta;
     public String comentario;
-    public int quantidadeDeAcertos;
-    public int quantidadeDeErros;
 
-    public Questao(int numero, String pergunta, boolean resposta, String comentario, int quantidadeDeAcertos, int quantidadeDeErros) {
+    public Questao(int numero, String pergunta, boolean resposta, String comentario) {
         this.numero = numero;
         this.pergunta = pergunta;
         this.resposta = resposta;
         this.comentario = comentario;
-        this.quantidadeDeAcertos = quantidadeDeAcertos;
-        this.quantidadeDeErros = quantidadeDeErros;
     }
 
      
@@ -49,29 +45,5 @@ public class Questao {
     public void setComentario(String comentario) {
         this.comentario = comentario;
     }
-
-    public int getQuantidadeDeAcertos() {
-        return quantidadeDeAcertos;
-    }
-
-    public void setQuantidadeDeAcertos(int quantidadeDeAcertos) {       
-            this.quantidadeDeAcertos = quantidadeDeAcertos;   
-    }
-
-    public int getQuantidadeDeErros() {
-        return quantidadeDeErros;
-    }
-
-    public void setQuantidadeDeErros(int quantidadeDeErros) {
-        this.quantidadeDeErros = quantidadeDeErros;
-    }
-    
-    @Override
-    public String toString() {
-        return "Questao{" + "numero=" + numero + ", pergunta=" + pergunta +
-               ", resposta=" + resposta + ", comentario=" + comentario +
-               ", quantidadeDeAcertos=" + quantidadeDeAcertos +
-               ", quantidadeDeErros=" + quantidadeDeErros + '}';
-    }
-    
+        
 }

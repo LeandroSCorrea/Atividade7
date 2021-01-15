@@ -12,7 +12,7 @@ public class AppQuestao {
                 
         Questao qt1 = new Questao(1, "O método utilizado para inicializar objetos"
                + " de uma classe quando estes são criados é denominado "
-               + "construtor", true, "", 0, 0);
+               + "construtor", true, "");
             
         JOptionPane jp = new JOptionPane();
         
@@ -31,7 +31,7 @@ public class AppQuestao {
         
         Questao qt2 = new Questao(2, "No enfoque de orientação a objetos,"
                 + " um procedimento de chamada dentro de um objeto é um método"
-                , false, "É uma operação.", 0, 0);
+                , false, "É uma operação.");
         
         compResposta = jp.showConfirmDialog(jp,"Questão " +qt2.getNumero()+ " - " +qt2.getPergunta()+ "\n",
                 "Caderno de questões", JOptionPane.YES_NO_OPTION);
@@ -47,7 +47,7 @@ public class AppQuestao {
         Questao qt3 = new Questao(3, "Na orientação a objetos, o desenvolvimento"
                 + " de sistemas baseia-se, de forma completa, nos conceitos de"
                 + " classe, objeto e atributos.", false, " Objeto,"
-                + " estado e estímulo.", 0, 0);
+                + " estado e estímulo.");
         
         compResposta = jp.showConfirmDialog(jp,"Questão " +qt3.getNumero()+ " - " +qt3.getPergunta()+ "\n",
                 "Caderno de questões", JOptionPane.YES_NO_OPTION);
@@ -69,7 +69,7 @@ public class AppQuestao {
                 + "métodos de instância que não possuam visibilidade private."
                 + "A sobrescrição é uma característica de linguagens orientadas "
                 + "a objeto que tem por objetivo especializar um comportamento "
-                + "comum que fora definido na superclasse.", 0, 0);
+                + "comum que fora definido na superclasse.");
         
         compResposta = jp.showConfirmDialog(jp,"Questão " +qt4.getNumero()+ " - " +qt4.getPergunta()+ "\n",
                 "Caderno de questões", JOptionPane.YES_NO_OPTION);
@@ -84,7 +84,7 @@ public class AppQuestao {
         
         Questao qt5 = new Questao(5, "Um construtor, responsável pela alocação"
                 + " de recursos necessários, é um método chamado para criação "
-                + "de uma nova instância do objeto.", true, " ", 0, 0);
+                + "de uma nova instância do objeto.", true, " ");
         compResposta = jp.showConfirmDialog(jp,"Questão " +qt5.getNumero()+ " - " +qt5.getPergunta()+ "\n",
                 "Caderno de questões", JOptionPane.YES_NO_OPTION);
                 
