@@ -54,12 +54,10 @@ public class Questao {
         return quantidadeDeAcertos;
     }
 
-    public void setQuantidadeDeAcertos(int quantidadeDeAcertos) {
-//        if (quantidadeDeAcertos == ) {
-//            
-//            this.quantidadeDeAcertos += quantidadeDeAcertos;
-//        }
-        this.quantidadeDeAcertos = quantidadeDeAcertos;
+    public void setQuantidadeDeAcertos(int quantidadeDeAcertos) {       
+        //if (getResposta() == true) {
+            this.quantidadeDeAcertos = quantidadeDeAcertos + 1;
+        //}
     }
 
     public int getQuantidadeDeErros() {
@@ -67,15 +65,18 @@ public class Questao {
     }
 
     public void setQuantidadeDeErros(int quantidadeDeErros) {
-        this.quantidadeDeErros = quantidadeDeErros;
+        //if (getResposta() == true) {
+            this.quantidadeDeErros = quantidadeDeErros + 1;
+        //}
     }
-
-//    @Override
-//    public String toString() {
-//        return "Questao{" + "numero=" + numero + ", pergunta=" + pergunta +
-//               ", resposta=" + resposta + ", comentario=" + comentario +
-//               ", quantidadeDeAcertos=" + quantidadeDeAcertos +
-//               ", quantidadeDeErros=" + quantidadeDeErros + '}';
-//    }
+    
+    
+    @Override
+    public String toString() {
+        return "Questao{" + "numero=" + numero + ", pergunta=" + pergunta +
+               ", resposta=" + resposta + ", comentario=" + comentario +
+               ", quantidadeDeAcertos=" + quantidadeDeAcertos +
+               ", quantidadeDeErros=" + quantidadeDeErros + '}';
+    }
     
 }
