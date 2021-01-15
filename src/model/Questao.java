@@ -55,9 +55,7 @@ public class Questao {
     }
 
     public void setQuantidadeDeAcertos(int quantidadeDeAcertos) {       
-        //if (getResposta() == true) {
-            this.quantidadeDeAcertos = quantidadeDeAcertos + 1;
-        //}
+            this.quantidadeDeAcertos = quantidadeDeAcertos;   
     }
 
     public int getQuantidadeDeErros() {
@@ -65,11 +63,8 @@ public class Questao {
     }
 
     public void setQuantidadeDeErros(int quantidadeDeErros) {
-        //if (getResposta() == true) {
-            this.quantidadeDeErros = quantidadeDeErros + 1;
-        //}
+        this.quantidadeDeErros = quantidadeDeErros;
     }
-    
     
     @Override
     public String toString() {

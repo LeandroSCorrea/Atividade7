@@ -24,7 +24,6 @@ public class AppQuestao {
         if (compResposta == 0) {
             jp.showMessageDialog(jp,"Resposta certa! " + qt1.getComentario());
             totalCertas += 1;
-            qt1.setQuantidadeDeAcertos(totalCertas + 1);
         } else {
             jp.showMessageDialog(jp,"Resposta errada!\n" + qt1.getComentario());
             totalErradas += 1;
@@ -40,7 +39,6 @@ public class AppQuestao {
         if (compResposta == 1) {
             jp.showMessageDialog(jp,"Resposta certa!\n" + qt2.getComentario());
             totalCertas += 1;
-            qt2.setQuantidadeDeAcertos(totalCertas + 1);
         } else {
             jp.showMessageDialog(jp,"Resposta errada! " + qt2.getComentario());
             totalErradas += 1;
@@ -56,7 +54,7 @@ public class AppQuestao {
                 
         if (compResposta == 1) {
             jp.showMessageDialog(jp,"Resposta certa!\n" + qt3.getComentario());
-            totalCertas += 1; 
+            totalCertas += 1;
         } else {
             jp.showMessageDialog(jp,"Resposta errada! " + qt3.getComentario());
             totalErradas += 1;
@@ -78,7 +76,7 @@ public class AppQuestao {
                 
         if (compResposta == 0) {
             jp.showMessageDialog(jp,"Resposta certa! " + qt4.getComentario());
-            totalCertas += 1; 
+            totalCertas += 1;
         } else {
             jp.showMessageDialog(jp,"Resposta errada!\n" + qt4.getComentario());
             totalErradas += 1;
@@ -92,7 +90,7 @@ public class AppQuestao {
                 
         if (compResposta == 0) {
             jp.showMessageDialog(jp,"Resposta certa! " + qt5.getComentario());
-            totalCertas += 1; 
+            totalCertas += 1;
         } else {
             jp.showMessageDialog(jp,"Resposta errada!\n" + qt5.getComentario());
             totalErradas += 1;
